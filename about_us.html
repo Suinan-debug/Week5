@@ -1,0 +1,392 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Bank of China</title>
+    <link
+      rel="stylesheet"
+      href="https://fonts.googleapis.com/css2?family=Material+Symbols+Rounded:opsz,wght,FILL,GRAD@48,400,0,0"
+    />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css"
+    />
+    <link rel="stylesheet" href="style.css" />
+    <script src="script.js" defer></script>
+    <style>
+      /* Basic Styles */
+      body {
+        font-family: "Arial", sans-serif;
+        margin: 0;
+        box-sizing: border-box;
+      }
+
+      a {
+        text-decoration: none;
+      }
+
+      /* Top Bar */
+      .top-bar {
+        background-color: #d9181f; /* Red color */
+        color: white;
+        padding: 10px 20px;
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+      }
+
+      .top-bar .logo img {
+        height: 30px; /* Adjust logo size as needed */
+      }
+
+      .top-bar .menu {
+        display: flex;
+      }
+
+      .top-bar .menu a {
+        color: white;
+        margin-left: 20px;
+        font-size: 0.9em;
+      }
+
+      /* Navigation Bar */
+      /* .navbar {
+        background-color: #1b1b1b; 
+            color: white;
+            padding: 10px 20px;
+        }
+
+        .navbar .nav-links {
+            display: flex;
+            justify-content: space-around;
+        }
+
+        .navbar .nav-links a {
+            color: white;
+            font-weight: bold;
+        } */
+
+      /* Hero Section */
+
+      /* Sections */
+      .sections {
+        padding: 30px 20px;
+      }
+
+      .section-title {
+        color: #d9181f;
+        text-align: center;
+        margin-bottom: 20px;
+      }
+
+      .cards {
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: space-around;
+      }
+
+      .card {
+        width: calc(25% - 20px);
+        margin-bottom: 20px;
+        padding: 20px;
+        border: 1px solid #ddd;
+        border-radius: 5px;
+        box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+        text-align: center;
+      }
+
+      .card i {
+        font-size: 2em;
+        color: #d9181f;
+        margin-bottom: 10px;
+      }
+
+      .card h3 {
+        margin-bottom: 10px;
+      }
+
+      .card p {
+        font-size: 0.9em;
+        line-height: 1.5;
+      }
+
+      .card .more {
+        display: inline-block;
+        color: #d9181f;
+        margin-top: 15px;
+      }
+
+      .card .more i {
+        font-size: 1em;
+        margin-left: 5px;
+      }
+
+      .container {
+        display: flex;
+        align-items: center;
+        border: 1px solid #ccc;
+        padding: 20px;
+        border-radius: 5px;
+        box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+      }
+
+      .text-content {
+        flex: 1;
+        margin-right: 20px;
+      }
+
+      .text-content h2 {
+        color: #d9181f; /* Example color - match to your design */
+      }
+
+      .text-content p {
+        margin-bottom: 5px;
+        text-align: justify;
+      }
+      .text-content p {
+        text-indent: 40px;
+      }
+
+      .text-content .button {
+        background-color: #d9181f;
+        color: white;
+        padding: 10px 20px;
+        border: none;
+        border-radius: 5px;
+        cursor: pointer;
+        display: inline-block; /* To control button width */
+      }
+
+      .image-content {
+        flex: 1;
+        display: flex; /* Enable flexbox for the image container */
+        justify-content: center; /* Center the image horizontally */
+        align-items: center; /* Center the image vertically */
+      }
+
+      .image-content img {
+        max-width: 50%;
+        height: auto;
+      }
+
+      @media (max-width: 768px) {
+        .container {
+          flex-direction: column; /* Stack vertically on smaller screens */
+          text-align: center; /* Center text on smaller screens */
+        }
+        .text-content {
+          margin-right: 0; /* Remove margin on smaller screens */
+          margin-bottom: 20px; /* Add margin below text */
+        }
+      }
+
+      /* Responsive Design */
+      @media (max-width: 768px) {
+        .top-bar .menu {
+          display: none;
+        }
+
+        .navbar .nav-links {
+          flex-direction: column;
+        }
+
+        .navbar .nav-links a {
+          margin: 10px 0;
+        }
+
+        .hero .overlay h2 {
+          font-size: 2em;
+        }
+
+        .cards {
+          flex-direction: column;
+        }
+
+        .card {
+          width: 100%;
+        }
+      }
+    </style>
+  </head>
+  <body>
+    <header>
+      <nav class="navbar">
+        <span class="hamburger-btn material-symbols-rounded">menu</span>
+        <a href="#" class="logo">
+          <img src="images/logo.png" alt="logo" />
+          <!-- <h2>CodingNepal</h2> -->
+        </a>
+        <ul class="links">
+          <span class="close-btn material-symbols-rounded">close</span>
+          <li><a href="index2.html">Home</a></li>
+          <li><a href="about_us.html">About Us</a></li>
+          <li><a href="#">Disclosure</a></li>
+          <li><a href="#">News</a></li>
+          <li><a href="csr.html">CSR</a></li>
+          <li><a href="#">Careers</a></li>
+          <li><a href="contact_us.html">Contact Us</a></li>
+        </ul>
+        <button class="login-btn">LOG IN</button>
+      </nav>
+    </header>
+    <div class="blur-bg-overlay"></div>
+    <div class="form-popup">
+      <span class="close-btn material-symbols-rounded">close</span>
+      <div class="form-box login">
+        <div class="form-details">
+          <!-- <h2>Bank of China</h2>
+          <p>
+            A Century of Global Service
+          </p> -->
+        </div>
+        <div class="form-content">
+          <div class="header_1">
+            <h2>User Login</h2>
+            <span>
+              <i class="fas fa-question-circle"></i>
+              <div class="tooltip">
+                <p>Instructions for login setup:</p>
+                <p>
+                  <span>*</span>If you are using the Online Banking for the
+                  first time, please use the "User Name" from your password
+                  envelope to log in.
+                </p>
+                <p>
+                  <span>*</span>After finishing using the Internet Banking each
+                  time, please click "Exit" button on the top right to log out.
+                </p>
+                <p><span>*</span>User Name and Password are case sensitive.</p>
+              </div>
+            </span>
+          </div>
+          <form action="#">
+            <div class="input-field">
+              <input type="text" required />
+              <label>Username</label>
+            </div>
+            <div class="input-field">
+              <input type="password" required />
+              <label>Password</label>
+            </div>
+            <a href="#" class="forgot-pass-link">Forgot password?</a>
+            <div class="input-field">
+              <input type="number" required />
+              <label>E-Token</label>
+            </div>
+            <div class="input-field">
+              <input style="width: 50%" type="number" required />
+              <label>Certification Code</label>
+              <!-- <input style="width: 30%;" value="AzTUS" type="text" required /> -->
+              <a href="#" class="forgot-pass-link">Change Code</a>
+            </div>
+            <!-- <div class="form-box login">
+              <a href="#" class="forgot-pass-link">Change Code</a>
+           
+              <a href="#" class="forgot-pass-link">Forgot password?</a>
+              </div> -->
+            <button type="submit">Log In</button>
+          </form>
+        </div>
+      </div>
+    </div>
+
+    <div class="hero">
+      <img src="images/bg3.jpg" alt="Hero Image" />
+    </div>
+
+    <div class="sections">
+      <h2 class="section-title">About Bank of China</h2>
+      <div class="container">
+        <div class="text-content">
+          <p>
+            Bank of China is the bank with the longest continuous operation
+            among Chinese banks. Formally established in February 1912, the Bank
+            served consecutively as the country’s central bank, international
+            exchange bank and specialized international trade bank. After 1949,
+            the Bank became responsible for managing China’s foreign exchange
+            operations and offering international trade settlement, overseas
+            fund transfer and other non-trade foreign exchange services. The
+            Bank provides various financial services, and has developed into a
+            large commercial bank delivering services in local and foreign
+            currencies and featuring complete business varieties and financial
+            strength. The Bank was listed on the Hong Kong Stock Exchange and
+            the Shanghai Stock Exchange in 2006, becoming the first Chinese bank
+            to launch an A-Share and H-Share initial public offering and achieve
+            a dual listing in both markets. The Bank is the official banking
+            partner of the Beijing 2008 Summer Olympics and the Beijing 2022
+            Winter Olympics, thus making it the only bank in China to serve two
+            Olympic Games. In 2011, Bank of China became the first financial
+            institution from an emerging economy to be designated as a Global
+            Systemically Important Bank, a designation it has now maintained for
+            12 consecutive years. With its growing international status,
+            competitiveness and comprehensive strengths, the Bank has marched
+            forward into the ranks of the world’s large banks. In 2021, the Bank
+            prepared the Group’s 14th Five-Year Plan, clarified its positioning
+            and comparative advantages in the domestic economy and in the
+            domestic and international economic flows, and focused on the
+            development of the “Eight Priority Areas” of technology finance,
+            green finance, inclusive finance, cross-border finance, consumer
+            finance, wealth finance, supply chain finance and county-level
+            finance. It moved faster in forming a strategic development
+            landscape with its domestic commercial banking services as the
+            business mainstay, its globalised operations and diversified
+            business platforms as the two growth engines, and worked hard to
+            write a new chapter of building a first-class global banking group.
+          </p>
+
+          <h4>Bank of China (Hong Kong) Limited – Manila Branch</h4>
+          <p>
+            In the Philippines, Bank of China has a full commercial banking
+            license and has been in operations since 2002. The Manila Branch’s
+            mission is to be the bridge between Chinese and Philippine trade and
+            investments through corporate banking, personal banking, and
+            financial markets services, facilitating Chinese investments in key
+            sectors of the fast-growing Philippine economy, investing in a
+            Renminbi (RMB) transfer system to encourage the settlement of
+            payments in RMB.
+          </p>
+          <p>
+            In 2020, the Philippines ranked first in RMB growth rate in
+            Southeast Asia. In support of a growing local renminbi (RMB) market,
+            Bank of China has been officially established as the RMB Clearing
+            Bank of the Philippines. This follows the initial memorandum of
+            understanding signed by the People’s Bank of China and the Bangko
+            Sentral ng Pilipinas in 2019. As the designated clearing bank for
+            RMB business in the Philippines, Bank of China Manila can process
+            the settlement of accounts and other core RMB services such as
+            remittance, foreign exchange, liquidity support, and banknotes for
+            local participating banks. It can also provide local market
+            participants with access to mainland China’s CNY onshore rates as an
+            alternative to the more accessible offshore CNH rate. CNY is the RMB
+            rate that can only be traded on-shore (in mainland China) or through
+            Clearing Banks appointed by the PBOC internationally. By making it
+            easier to trade with counterparties in mainland China, Bank of China
+            Manila can help improve the economic and trade partnership to
+            promote development between the Philippines and China.
+          </p>
+
+          <p>
+            Bank of China provides matchmaking services to Philippine corporates
+            and Chinese suppliers, which are clients of the Bank across more
+            than 11,000 branches in China. We have brought our clients from
+            China to invest in the Philippines and to partner with local firms
+            as contractors and as providers of advanced technology.
+          </p>
+
+          <p>
+            Moving forward, Bank of China aims to facilitate more Chinese
+            investments in important sectors of the Philippine economy. Bank of
+            China continues to work closely with Philippine and Chinese
+            corporations to establish strong partnerships and make trade and
+            investment between the two nations more efficient through the use of
+            RMB as a settlement currency, for the inclusive growth of both
+            countries.
+          </p>
+
+        </div>
+      </div>
+      <br />
+    </div>
+  </body>
+</html>
